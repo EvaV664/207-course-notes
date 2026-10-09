@@ -57,6 +57,7 @@ public class MyHashing {
   public int hash(char value) {
     // TODO
     int previous = seed;
+    seed = value; // update the seed to the new value
     return (previous + value) % MODULO;
   }
 
